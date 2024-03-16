@@ -37,7 +37,7 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
           </thead>
           <tbody>
             {wantToCook.map((recipe, index) => (
-              <tr key={index}>
+              <tr key={index} className="bg-[#F8F8FF]">
                 <th>{index + 1}</th>
                 <td>{recipe.recipe_name}</td>
                 <td>{recipe.preparing_time}</td>
@@ -76,7 +76,7 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
           </thead>
           <tbody>
             {currentlyCooking.map((recipe, index) => (
-              <tr key={index}>
+              <tr key={index} className="bg-[#F8F8FF]">
                 <th>{index + 1}</th>
                 <td>{recipe.recipe_name}</td>
                 <td>{recipe.preparing_time}</td>
