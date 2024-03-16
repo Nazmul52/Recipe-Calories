@@ -3,10 +3,10 @@ import HeroImage from "../assets/Hero.png";
 const HeroSection = () => {
   return (
     <div
-      className="hero min-h-screen rounded-3xl mt-8"
+      className="hero  rounded-3xl mt-8 h-[700px]"
       style={{ backgroundImage: `url(${HeroImage})` }}
     >
-      <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
+      <div className="hero-overlay bg-opacity-60 rounded-3xl h-[700px]"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-xl">
           <h1 className="mb-5 text-4xl font-bold">
