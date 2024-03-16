@@ -1,0 +1,106 @@
+export const data = [
+  {
+    recipe_id: "1",
+    recipe_name: "Grilled Lemon Herb Chicken",
+    image: "grilled_lemon_herb_chicken.jpg",
+    short_description:
+      "Juicy grilled chicken marinated in zesty lemon and aromatic herbs.",
+    ingredients: [
+      "550 g chicken breasts",
+      "120 ml lemon juice",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "2 tsp dried oregano",
+      "Salt and pepper to taste",
+    ],
+    preparing_time: "30 minutes",
+    calories: "320 calories",
+  },
+  {
+    recipe_id: "2",
+    recipe_name: "Vegetable Stir-Fry",
+    image: "vegetable_stir_fry.jpg",
+    short_description:
+      "A colorful medley of crisp veggies stir-fried to perfection.",
+    ingredients: [
+      "200 g broccoli florets",
+      "150 g bell peppers, sliced",
+      "100 g carrots, julienned",
+      "100 g snow peas",
+      "120 ml soy sauce",
+      "2 cloves garlic, minced",
+      "2 tbsp sesame oil",
+    ],
+    preparing_time: "25 minutes",
+    calories: "180 calories",
+  },
+  {
+    recipe_id: "3",
+    recipe_name: "Creamy Mushroom Risotto",
+    image: "creamy_mushroom_risotto.jpg",
+    short_description:
+      "Indulgent risotto infused with earthy mushrooms and creamy goodness.",
+    ingredients: [
+      "300 g Arborio rice",
+      "400 g mixed mushrooms",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1 L vegetable broth",
+      "120 ml white wine",
+      "60 g Parmesan cheese, grated",
+    ],
+    preparing_time: "40 minutes",
+    calories: "380 calories",
+  },
+  {
+    recipe_id: "4",
+    recipe_name: "Classic Margherita Pizza",
+    image: "classic_margherita_pizza.jpg",
+    short_description:
+      "Simple yet satisfying pizza topped with fresh tomatoes, basil, and mozzarella.",
+    ingredients: [
+      "300 g pizza dough",
+      "200 g mozzarella cheese",
+      "200 g tomatoes, thinly sliced",
+      "Fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste",
+    ],
+    preparing_time: "20 minutes",
+    calories: "250 calories",
+  },
+  {
+    recipe_id: "5",
+    recipe_name: "Avocado Toast with Poached Egg",
+    image: "avocado_toast_poached_egg.jpg",
+    short_description:
+      "A trendy breakfast option featuring creamy avocado and a perfectly poached egg atop crispy toast.",
+    ingredients: [
+      "2 slices whole grain bread",
+      "1 ripe avocado",
+      "2 eggs",
+      "1 tsp vinegar",
+      "Salt and pepper to taste",
+      "Chili flakes (optional)",
+    ],
+    preparing_time: "15 minutes",
+    calories: "280 calories",
+  },
+  {
+    recipe_id: "6",
+    recipe_name: "Berry Blast Smoothie Bowl",
+    image: "berry_blast_smoothie_bowl.jpg",
+    short_description:
+      "A refreshing blend of mixed berries served as a vibrant and nutritious smoothie bowl.",
+    ingredients: [
+      "1 cup mixed berries (strawberries, blueberries, raspberries)",
+      "1 ripe banana",
+      "120 ml almond milk",
+      "2 tbsp Greek yogurt",
+      "2 tbsp honey",
+      "Toppings: granola, sliced fruit, coconut flakes",
+    ],
+    preparing_time: "10 minutes",
+    calories: "220 calories",
+  },
+];
