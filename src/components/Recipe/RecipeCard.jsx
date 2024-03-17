@@ -10,7 +10,7 @@ const RecipeCard = ({
   calories,
   onCook,
 }) => {
-  const recipeImage = "../../assets/images/" + image;
+  const recipeImage = "../../../public/images/" + image;
 
   return (
     <div className="shadow-md rounded-lg max-w-[330px]  p-4">
