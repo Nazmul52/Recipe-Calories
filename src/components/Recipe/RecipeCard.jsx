@@ -10,8 +10,7 @@ const RecipeCard = ({
   calories,
   onCook,
 }) => {
-  const recipeImage =
-    "https://recipe-calories-dun.vercel.app/assets/images/" + image;
+  const recipeImage = "../../assets/images/" + image;
 
   return (
     <div className="shadow-md rounded-lg max-w-[330px]  p-4">
