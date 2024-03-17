@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import PrepareFood from "../../assets/mad-kitchen.gif";
+import Cooking from "../../assets/yier-cook.gif";
 
 const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
   const [totalTime, setTotalTime] = useState(0);
@@ -20,6 +22,14 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
   return (
     <div className="flex flex-col justify-start items-start border-b-2 border-solid border-gray-300">
       <div className="my-4 text-center mx-auto border-b-2 w-full pb-4">
+        {wantToCook.length > 0 && (
+          <img
+            src={PrepareFood}
+            className="w-36 h-36 mb-6 mx-auto"
+            alt="Preparing Food"
+          />
+        )}
+
         <h1 className="text-2xl font-bold">
           Want to cook: {wantToCook.length}
         </h1>
@@ -59,6 +69,14 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
       </div>
 
       <div className="my-8 text-center mx-auto border-b-2 w-full pb-4">
+        {currentlyCooking.length > 0 && (
+          <img
+            src={Cooking}
+            className="w-36 h-36 mb-6 mx-auto"
+            alt="Cooking Food"
+          />
+        )}
+
         <h1 className="text-2xl font-bold">
           Currently cooking: {currentlyCooking.length}
         </h1>

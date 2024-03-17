@@ -62,7 +62,7 @@ const MainBody = () => {
             />
           ))}
         </div>
-        <div className="shadow-md rounded-lg max-w-[500px] max-h-[900px] w-full p-8 mt-8 border-2 border-[#F8F8SS]">
+        <div className="shadow-md rounded-lg max-w-[500px]  w-full p-8 mt-8 border-2 border-[#F8F8SS]">
           <CookingCard
             wantToCook={wantToCook}
             currentlyCooking={currentlyCooking}
