@@ -1,8 +1,10 @@
+import HeroImage from "../assets/Hero.png";
+
 const HeroSection = () => {
   return (
     <div
       className="hero  rounded-3xl mt-8 h-[700px]"
-      style={{ backgroundImage: `url('/images/Hero.png')` }}
+      style={{ backgroundImage: `url(${HeroImage})` }}
     >
       <div className="hero-overlay bg-opacity-60 rounded-3xl h-[700px]"></div>
       <div className="hero-content text-center text-neutral-content">
