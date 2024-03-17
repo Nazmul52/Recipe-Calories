@@ -30,7 +30,7 @@ const Header = () => {
               <a>Home</a>
             </li>
             <li>
-              <a>Recipe</a>
+              <a href="#recipe">Recipe</a>
             </li>
             <li>
               <a>About</a>
@@ -48,7 +48,7 @@ const Header = () => {
             <a>Home</a>
           </li>
           <li className="text-[16px]">
-            <a>Recipe</a>
+            <a href="#recipe">Recipe</a>
           </li>
           <li className="text-[16px]">
             <a>About</a>

@@ -38,7 +38,7 @@ const MainBody = () => {
   }, []);
 
   return (
-    <div className="max-w-[1320px] mt-24">
+    <div className="max-w-[1320px] mt-24" id="recipe">
       <div className="mx-auto max-w-[823px]">
         <h1 className="text-3xl font-bold">Our Recipes</h1>
         <p className="mt-6 text-gray-500">
@@ -62,7 +62,7 @@ const MainBody = () => {
             />
           ))}
         </div>
-        <div className="shadow-md rounded-lg max-w-[500px] max-h-[900px] w-full p-8">
+        <div className="shadow-md rounded-lg max-w-[500px] max-h-[900px] w-full p-8 mt-8 border-2 border-[#F8F8SS]">
           <CookingCard
             wantToCook={wantToCook}
             currentlyCooking={currentlyCooking}

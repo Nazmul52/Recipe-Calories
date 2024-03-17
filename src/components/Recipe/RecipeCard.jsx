@@ -13,7 +13,7 @@ const RecipeCard = ({
   const recipeImage = "/images/" + image;
 
   return (
-    <div className="shadow-md rounded-lg max-w-[330px]  p-4">
+    <div className="shadow-md rounded-lg max-w-[330px] border-2 border-[#F8F8SS]  p-4">
       <div className="flex flex-col justify-start items-start border-b-2 border-solid border-gray-300">
         <img
           src={recipeImage}
