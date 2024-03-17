@@ -35,37 +35,42 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
         </h1>
       </div>
       <div className="lg:overflow-x-hidden overflow-x-auto lg:w-full w-[220px]">
-        <table className="table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Time</th>
-              <th>Calories</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {wantToCook.map((recipe, index) => (
-              <tr key={index} className="bg-[#F8F8FF]">
-                <th>{index + 1}</th>
-                <td>{recipe.recipe_name}</td>
-                <td>{recipe.preparing_time}</td>
-                <td>{recipe.calories}</td>
-                <td>
-                  <button
-                    className="cook-button mt-6 flex flex-row justify-start rounded-full font-bold"
-                    onClick={() => prepareRecipe(recipe.recipe_id)}
-                  >
-                    Preparing
-                  </button>
-                </td>
+        {wantToCook.length === 0 && (
+          <p className="text-xl">No food for preparing.</p>
+        )}
+        {wantToCook.length > 0 && (
+          <table className="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Calories</th>
+                <th></th>
               </tr>
-            ))}
+            </thead>
+            <tbody>
+              {wantToCook.map((recipe, index) => (
+                <tr key={index} className="bg-[#F8F8FF]">
+                  <th>{index + 1}</th>
+                  <td>{recipe.recipe_name}</td>
+                  <td>{recipe.preparing_time}</td>
+                  <td>{recipe.calories}</td>
+                  <td>
+                    <button
+                      className="cook-button mt-6 flex flex-row justify-start rounded-full font-bold"
+                      onClick={() => prepareRecipe(recipe.recipe_id)}
+                    >
+                      Preparing
+                    </button>
+                  </td>
+                </tr>
+              ))}
 
-            <tr></tr>
-          </tbody>
-        </table>
+              <tr></tr>
+            </tbody>
+          </table>
+        )}
       </div>
 
       <div className="my-8 text-center mx-auto border-b-2 w-full pb-4">
@@ -82,39 +87,44 @@ const CookingCard = ({ wantToCook, currentlyCooking, prepareRecipe }) => {
         </h1>
       </div>
       <div className="overflow-x-auto lg:w-full w-[220px]">
-        <table className="table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Time</th>
-              <th>Calories</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentlyCooking.map((recipe, index) => (
-              <tr key={index} className="bg-[#F8F8FF]">
-                <th>{index + 1}</th>
-                <td>{recipe.recipe_name}</td>
-                <td>{recipe.preparing_time}</td>
-                <td>{recipe.calories}</td>
+        {currentlyCooking.length === 0 && (
+          <p className="text-xl">No food for cooking.</p>
+        )}
+        {currentlyCooking.length > 0 && (
+          <table className="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Calories</th>
+                <th></th>
               </tr>
-            ))}
-            <tr>
-              <td></td>
-              <td></td>
+            </thead>
+            <tbody>
+              {currentlyCooking.map((recipe, index) => (
+                <tr key={index} className="bg-[#F8F8FF]">
+                  <th>{index + 1}</th>
+                  <td>{recipe.recipe_name}</td>
+                  <td>{recipe.preparing_time}</td>
+                  <td>{recipe.calories}</td>
+                </tr>
+              ))}
+              <tr>
+                <td></td>
+                <td></td>
 
-              <td>
-                Total Time = <br /> {totalTime} minutes
-              </td>
-              <td>
-                Total Calories = <br />
-                {totalCalories} calories
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                <td>
+                  Total Time = <br /> {totalTime} minutes
+                </td>
+                <td>
+                  Total Calories = <br />
+                  {totalCalories} calories
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
